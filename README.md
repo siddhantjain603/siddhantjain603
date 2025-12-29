@@ -1,6 +1,6 @@
 <h1 align="center">Hi, I'm Siddhant Jain 👋</h1>
 <p align="center">
-AI/ML Engineer • Generative AI • Multi-Agent Systems
+Building production-grade <b>Generative AI systems</b> with <b>multi-agent orchestration</b>
 </p>
 
 ---
@@ -9,11 +9,12 @@ AI/ML Engineer • Generative AI • Multi-Agent Systems
 
 I’m an **AI/ML Engineer** specializing in **Generative AI and multi-agent systems**, with hands-on experience designing and deploying **production-grade LLM workflows**.
 
-My work focuses on **LLM orchestration, tool-based agents, and memory-driven architectures** using  
-**LangGraph, LangChain, MCP, and Autogen**, backed by scalable **Azure infrastructure**  
-(Functions, Cosmos DB, Blob Storage, App Service).
+I specialize in:
+- **Multi-agent orchestration** using LangGraph, LangChain, MCP, and Autogen  
+- **Tool-based agents** with memory, state, and human-in-the-loop control  
+- **Scalable GenAI backends** built on Azure (Functions, Cosmos DB, Blob Storage, App Service)
 
-I build systems where LLMs don’t just respond — they **reason, delegate tasks, invoke tools, coordinate with other agents, and operate with human-in-the-loop control**. I care deeply about **system design, latency, reliability, and real-world constraints**, not demo-only prototypes.
+I build systems where LLMs don’t just respond — they **reason, delegate tasks, invoke tools, coordinate with other agents, and operate under real-world constraints** like latency, reliability, and safety.
 
 Currently at **Accenture**, I work on improving GenAI system performance, architecture, and developer usability, while evaluating emerging multi-agent frameworks for enterprise adoption.
 
@@ -76,41 +77,53 @@ Currently at **Accenture**, I work on improving GenAI system performance, archit
 
 ## 🚀 Featured Projects
 
-### 🏥 Multi-Agent Medical Appointment Assistant
+### 🏥 Multi-Agent Medical Appointment Assistant  
 **Tech:** MCP, LangGraph, LangChain, OpenAI, MySQL  
 
-- Supervisor-driven **multi-agent architecture** with isolated tool servers  
-- Tool-based agents for appointment search & booking  
-- Structured memory for multi-turn reasoning  
-- Human-in-the-loop checkpoints for controlled decision flows  
-- Modular design extensible to additional healthcare workflows  
+- Designed a **supervisor-driven multi-agent architecture** coordinating task-specific agents via MCP tool servers  
+- Implemented **tool-based agents** for appointment search and booking with isolated MySQL-backed execution  
+- Integrated **structured memory and conversational state** for multi-turn reasoning  
+- Added **human-in-the-loop checkpoints** for controlled, safety-aware decision flows  
+- Built a modular system extensible to additional healthcare workflows  
+
+> **Architecture:** Supervisor Agent → Task Agents → Tool Servers → Database
 
 ---
 
-### 👕 Natural Language Query System for Retail Data
+### 👕 Natural Language Query System for Retail Data  
 **Tech:** LangChain, FAISS, MySQL, Google PaLM  
 
-- End-to-end **NL → SQL** pipeline for non-technical users  
-- Vector-based intent matching using FAISS  
-- Schema-aware prompting for safe, accurate queries  
-- Conversational access to analytics without dashboards  
+- Built an end-to-end **NL → SQL pipeline** for non-technical users  
+- Used **FAISS-based vector search** to handle varied user phrasing and intent ambiguity  
+- Applied schema-aware prompting to generate safe, accurate SQL  
+- Enabled conversational analytics without manual dashboards  
 
 ---
 
-### 😴 Driver Drowsiness & Yawning Detection
+### 😴 Driver Drowsiness & Yawning Detection  
 **Tech:** MediaPipe, FaceNet, OpenCV  
 
-- Real-time facial landmark analysis  
-- ~90% detection accuracy  
-- ~20% performance improvement via optimized inference  
+- Developed a real-time facial analysis system using landmark-based detection  
+- Achieved ~90% detection accuracy  
+- Improved inference performance by ~20% through optimized frame processing  
+
+---
+
+## 🧠 System Design Focus
+
+- Multi-agent coordination & control flow  
+- LLM state and memory management  
+- Tool isolation and failure handling  
+- Latency and cost optimization  
+- Human-in-the-loop safety mechanisms  
 
 ---
 
 ## 🧩 Currently Exploring
 
-I’m currently learning **n8n** to build **automation workflows** that connect APIs, tools, and AI systems.
+I’m currently learning **n8n** to design **automation workflows** that connect APIs, tools, and AI systems.
 
-My focus is on **practical, event-driven automation** that integrates LLM-based decision-making with real-world services.  
-I’ll be publishing **hands-on projects** as these workflows mature into production-style use cases.
+My focus is on building **event-driven, reusable automation pipelines** that integrate LLM-based decision-making with real-world services.  
+Projects will be published as these workflows mature into production-style use cases.
 
 ---
