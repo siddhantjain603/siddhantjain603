@@ -7,14 +7,14 @@ Building production-grade <b>Generative AI systems</b> with <b>multi-agent orche
 
 ## 💫 About Me
 
-I’m an **AI/ML Engineer** specializing in **Generative AI and multi-agent systems**, with hands-on experience designing and deploying **production-grade LLM workflows**.
+I'm an **AI/ML Engineer** specializing in **Generative AI and multi-agent systems**, with hands-on experience designing and deploying **production-grade LLM workflows**.
 
 I specialize in:
 - **Multi-agent orchestration** using LangGraph, LangChain, MCP, and Autogen  
 - **Tool-based agents** with memory, state, and human-in-the-loop control  
 - **Scalable GenAI backends** built on Azure (Functions, Cosmos DB, Blob Storage, App Service)
 
-I build systems where LLMs don’t just respond — they **reason, delegate tasks, invoke tools, coordinate with other agents, and operate under real-world constraints** like latency, reliability, and safety.
+I build systems where LLMs don't just respond — they **reason, delegate tasks, invoke tools, coordinate with other agents, and operate under real-world constraints** like latency, reliability, and safety.
 
 Currently at **Accenture**, I work on improving GenAI system performance, architecture, and developer usability, while evaluating emerging multi-agent frameworks for enterprise adoption.
 
@@ -50,6 +50,7 @@ Currently at **Accenture**, I work on improving GenAI system performance, archit
 ### ☁️ Cloud & Backend
 <p>
 <img src="https://img.shields.io/badge/Azure-0078D4?logo=microsoftazure&logoColor=white"/>
+<img src="https://img.shields.io/badge/AWS-FF9900?logo=amazonaws&logoColor=white"/>
 <img src="https://img.shields.io/badge/FastAPI-005571?logo=fastapi"/>
 <img src="https://img.shields.io/badge/Flask-000000?logo=flask"/>
 <img src="https://img.shields.io/badge/JWT-black?logo=jsonwebtokens"/>
@@ -60,6 +61,7 @@ Currently at **Accenture**, I work on improving GenAI system performance, archit
 <p>
 <img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white"/>
 <img src="https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white"/>
+<img src="https://img.shields.io/badge/Pinecone-blue"/>
 <img src="https://img.shields.io/badge/FAISS-0467DF"/>
 <img src="https://img.shields.io/badge/Chroma-000000"/>
 </p>
@@ -77,35 +79,29 @@ Currently at **Accenture**, I work on improving GenAI system performance, archit
 
 ## 🚀 Featured Projects
 
-### 🏥 Multi-Agent Medical Appointment Assistant  
-**Tech:** MCP, LangGraph, LangChain, OpenAI, MySQL  
+### 🛡️ Brand Guardian AI — Video Compliance Audit System  
+**Tech:** LangChain, LangGraph, Azure OpenAI (GPT-4), Azure Video Indexer, Azure AI Search, FastAPI  
 
-- Designed a **supervisor-driven multi-agent architecture** coordinating task-specific agents via MCP tool servers  
-- Implemented **tool-based agents** for appointment search and booking with isolated MySQL-backed execution  
-- Integrated **structured memory and conversational state** for multi-turn reasoning  
-- Added **human-in-the-loop checkpoints** for controlled, safety-aware decision flows  
-- Built a modular system extensible to additional healthcare workflows  
+- Built an **AI-powered compliance auditing system** that automatically analyzes video content against brand guidelines, FTC regulations, and advertising standards  
+- Designed a **LangGraph workflow** with two nodes — Indexer (video processing) and Auditor (RAG-based compliance checking) — orchestrated end-to-end  
+- Used **Azure Video Indexer** to extract speech transcripts and on-screen text (OCR) from YouTube videos  
+- Applied **RAG pattern** with Azure AI Search (vector DB) to match video content against indexed compliance rules  
+- Exposed results via a **FastAPI REST API** with structured JSON reports, severity classification (CRITICAL / WARNING), and session tracking  
 
-> **Architecture:** Supervisor Agent → Task Agents → Tool Servers → Database
-
----
-
-### 👕 Natural Language Query System for Retail Data  
-**Tech:** LangChain, FAISS, MySQL, Google PaLM  
-
-- Built an end-to-end **NL → SQL pipeline** for non-technical users  
-- Used **FAISS-based vector search** to handle varied user phrasing and intent ambiguity  
-- Applied schema-aware prompting to generate safe, accurate SQL  
-- Enabled conversational analytics without manual dashboards  
+> **Pipeline:** YouTube Video → Azure Video Indexer → Transcript + OCR → RAG (Azure AI Search + GPT-4) → Compliance Report
 
 ---
 
-### 😴 Driver Drowsiness & Yawning Detection  
-**Tech:** MediaPipe, FaceNet, OpenCV  
+### 🏥 Medical RAG Chatbot — AWS Bedrock  
+**Tech:** LangChain, Pinecone, AWS Bedrock (Llama 3), HuggingFace, Streamlit  
 
-- Developed a real-time facial analysis system using landmark-based detection  
-- Achieved ~90% detection accuracy  
-- Improved inference performance by ~20% through optimized frame processing  
+- Built an end-to-end **RAG pipeline** for medical question-answering over PDF knowledge bases  
+- Used **HuggingFace `all-MiniLM-L6-v2`** embeddings with **Pinecone** for persistent vector storage and semantic retrieval  
+- Integrated **Meta Llama 3 8B via AWS Bedrock** for serverless LLM inference — no GPU required  
+- Delivered answers with **source attribution**, showing which document chunks backed each response  
+- Built a **Streamlit chat UI** with session history, sample questions, and a clean conversational interface  
+
+> **Pipeline:** PDF Documents → Chunked & Embedded → Pinecone → RAG Chain → Llama 3 → Streamlit UI
 
 ---
 
@@ -121,7 +117,7 @@ Currently at **Accenture**, I work on improving GenAI system performance, archit
 
 ## 🧩 Currently Exploring
 
-I’m currently learning **n8n** to design **automation workflows** that connect APIs, tools, and AI systems.
+I'm currently learning **n8n** to design **automation workflows** that connect APIs, tools, and AI systems.
 
 My focus is on building **event-driven, reusable automation pipelines** that integrate LLM-based decision-making with real-world services.  
 Projects will be published as these workflows mature into production-style use cases.
