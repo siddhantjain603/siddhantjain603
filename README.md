@@ -105,6 +105,19 @@ Currently at **Accenture**, I work on improving GenAI system performance, archit
 
 ---
 
+### 🤖 GitHub Assistant MCP — MCP, LangChain, Azure OpenAI  
+**Tech:** Tech: MCP, LangChain, Azure OpenAI, FastAPI, PyGitHub  
+
+- Built an AI-powered GitHub assistant using Model Context Protocol (MCP) to expose GitHub API operations as standardized tools
+- Designed a LangChain ReAct agent that leverages Azure OpenAI for natural language understanding and intelligent tool selection
+- Implemented MCP server with five core tools: repository listing, detailed repository information, issue management, issue creation, and repository statistics
+- Created FastAPI backend with RESTful chat endpoints, conversation history tracking, and static file serving for the web interface
+- Integrated PyGitHub library for robust GitHub API access with proper authentication, error handling, and rate limiting
+
+> **Pipeline:** PDF Documents → Chunked & Embedded → Pinecone → RAG Chain → Llama 3 → Streamlit UI
+
+---
+
 ## 🧠 System Design Focus
 
 - Multi-agent coordination & control flow  
